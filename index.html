@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Graphics Media - Professional Design Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="showPage('home')">
+                <i class="fas fa-palette"></i>
+                <span>Leo Graphics Media</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('services')">Services</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('portfolio')">Portfolio</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('about')">About</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- Back to Home Button (shows on other pages) -->
+    <a href="#" class="back-to-home" onclick="showPage('home')">
+        <i class="fas fa-home"></i>
+        Back to Home
+    </a>
+
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-indicator" onclick="scrollDown()">
+        <div class="scroll-arrow">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME PAGE -->
+    <div id="home-page" class="page active">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">Creative Design</span><br>
+                Solutions That Inspire
+            </h1>
+            <p class="hero-subtitle">
+                Transform your brand with stunning visuals. From logos to video editing, 
+                we bring your creative vision to life with professional excellence.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="showPage('services')">
+                    <i class="fas fa-rocket"></i>
+                    Explore Services
+                </button>
+                <button class="btn-secondary" onclick="showPage('portfolio')">
+                    <i class="fas fa-eye"></i>
+                    View Portfolio
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="services-page" class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Creative Services</h2>
+                <p class="section-subtitle">Comprehensive design solutions for all your creative needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Logo Design</h3>
+                    <p>Create memorable brand identities with custom logo designs that capture your business essence and make you stand out from the competition.</p>
+                    <ul class="service-features">
+                        <li>Custom Brand Identity Development</li>
+                        <li>Multiple Design Concepts</li>
+                        <li>Vector Files & All Formats</li>
+                        <li>Unlimited Revisions</li>
+                        <li>Brand Guidelines Included</li>
+                    </ul>
+                    <div class="pricing-info">
+                        <div class="price">Starting from </div>
+                         <div class="price">Tzs 50,000/=</div>
+                        <p>Professional logo design packages</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Poster Design</h3>
+                    <p>Eye-catching posters that communicate your message effectively and attract your target audience for events, promotions, and marketing campaigns.</p>
+                    <ul class="service-features">
+                        <li>Event & Concert Posters</li>
+                        <li>Marketing & Promotional Materials</li>
+                        <li>Print-Ready High Resolution</li>
+                        <li>Custom Illustrations</li>
+                        <li>Fast Turnaround Time</li>
+                    </ul>
+                    <div class="pricing-info">
+                        <div class="price">Starting from </div>
+                        <div class="price">Tzs 10,000/=</div>
+                        <p>Custom poster design solutions</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>Banner Design</h3>
+                    <p>Professional banners for digital and print media that make a lasting impression and drive engagement across all platforms.</p>
+                    <ul class="service-features">
+                        <li>Web & Social Media Banners</li>
+                        <li>Trade Show Display Banners</li>
+                        <li>Animated Banner Options</li>
+                        <li>Multiple Size Formats</li>
+                        <li>Brand Consistent Design</li>
+                    </ul>
+                    <div class="pricing-info">
+                        <div class="price">Starting from </div>
+                        <div class="price"> Tzs 20,000/=</div>
+                        <p>Digital & print banner designs</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing services to bring your stories to life with cinematic quality, perfect for marketing, events, and social media.</p>
+                    <ul class="service-features">
+                        <li>Professional Color Correction</li>
+                        <li>Motion Graphics & Animations</li>
+                        <li>Audio Enhancement & Mixing</li>
+                        <li>Social Media Optimization</li>
+                        <li>4K Video Support</li>
+                    </ul>
+                    <div class="pricing-info">
+                        <div class="price">Starting from </div><br>
+                         <div class="price"> Tzs 50,000/=</div>
+                        <p>Per minute of finished video</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Business Cards</h3>
+                    <p>Professional business card designs that leave a memorable first impression and help you network effectively in any business setting.</p>
+                    <ul class="service-features">
+                        <li>Premium Design Layouts</li>
+                        <li>Double-Sided Options</li>
+                        <li>Print Specifications Included</li>
+                        <li>QR Code Integration</li>
+                        <li>Multiple Format Delivery</li>
+                    </ul>
+                    <div class="pricing-info">
+                        <div class="price">Starting from</div><br>
+                        <div class="price"> Tzs 10,000/=</div>
+                        <p>Professional business card design</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Digital Graphics</h3>
+                    <p>Custom digital artwork and graphics for websites, apps, and social media platforms that engage your audience and enhance your online presence.</p>
+                    <ul class="service-features">
+                        <li>Social Media Graphics Package</li>
+                        <li>Website Graphics & Icons</li>
+                        <li>Digital Illustrations</li>
+                        <li>Infographic Design</li>
+                        <li>Brand Asset Creation</li>
+                    </ul>
+                    <div class="pricing-info">
+                        <div class="price">Starting from </div><br>
+                        <div class="price">Tzs 20,000/= </div>
+                        <p>Custom digital graphics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO PAGE -->
+    <div id="portfolio-page" class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Creative Portfolio</h2>
+                <p class="section-subtitle">Showcasing our best work across various design disciplines</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="logos">Logos</button>
+                <button class="filter-btn" data-filter="posters">Posters</button>
+                <button class="filter-btn" data-filter="banners">Banners</button>
+                <button class="filter-btn" data-filter="videos">Videos</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Replace these images easily by changing the src attributes -->
+                <div class="portfolio-item logos">
+                    <img src="im g/tt2.png" alt="Logo Design 1">
+                    <div class="portfolio-overlay">
+                        <h3>Tech Startup Logo</h3>
+                        <p>Modern brand identity design</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item posters">
+                    <img src="im g/sunday.png" alt="Poster Design 1">
+                    <div class="portfolio-overlay">
+                        <h3>Music Festival Poster</h3>
+                        <p>Event poster design</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item banners">
+                    <img src="im g/saadani tour-.png" alt="Banner Design 1">
+                    <div class="portfolio-overlay">
+                        <h3>Tour</h3>
+                        <p>tourism poster</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                 <div class="portfolio-item banners">
+                    <img src="im g/cb.png" alt="Book Design 1">
+                    <div class="portfolio-overlay">
+                        <h3>Book cover</h3>
+                        <p>print designs</p>
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item logos">
+                    <img src="im g/UYUH MSHINDI MINISTRY LOGO.png" alt="Logo Design 2">
+                    <div class="portfolio-overlay">
+                        <h3>Church Logo</h3>
+                        <p>Church identity</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item posters">
+                    <img src="im g/CHAN.png" alt="Poster Design 2">
+                    <div class="portfolio-overlay">
+                        <h3>Sports Event Poster</h3>
+                        <p>Marathon championship design</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item banners">
+                    <img src="im g/wallet poster.png" alt="Digital Banner">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media Banner</h3>
+                        <p>Brand awareness campaign</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item videos">
+                    <img src="im g/A1.png" alt="Video Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Product Showcase</h3>
+                        <p>Commercial video production</p>
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item logos">
+                    <img src="im g/Pin-Bagde-Mockupsforfree.png" alt="Logo Design 3">
+                    <div class="portfolio-overlay">
+                        <h3>Cosmetics logo</h3>
+                        <p>Luxury brand identity</p>
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about-page" class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Leo Graphics Media</h2>
+                <p class="section-subtitle">Your trusted partner for creative design solutions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem; color: #1f2937;">Our Story</h3>
+                    <p class="about-description">
+                        Leo Graphics Media was founded by Leonard James Mwachambi during December 2024, 
+                        at Dar es salaam institute of Technology (DIT) in Dar es salaam Tanzania.
+
+                        <p class="about-description">Leo Graphics Media was founded with a simple yet powerful vision: 
+                        to transform businesses through exceptional visual design.
+                         We are a creative design studio passionate about bringing your visual ideas to life
+                          with precision, creativity, and professional excellence.</p>
+                    </p>
+                    <p class="about-description">
+                        With years of experience in graphic design, branding, and digital media, we specialize 
+                        in creating compelling visual solutions that help businesses stand out in today's 
+                        competitive market. Our team combines artistic creativity with strategic thinking to 
+                        deliver designs that not only look amazing but also drive real business results.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">300+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support Available</div>
+                        </div>
+                    </div>
+                </div>
+               <div class="slideshow">
+  <img class="slide active" src="im g/PXL_20250620_151154830.jpg" alt="Slide 1">
+  <img class="slide" src="im g/pxl 2.jpg" alt="Slide 2">
+  <img class="slide" src="im g/pxl 3.jpg" alt="Slide 3">
+</div>
+
+            </div>
+       
+
+            <script>
+  const slides = document.querySelectorAll('.slideshow .slide');
+  let index = 0;
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 15000); // 15000ms = 15s
+</script>
+            
+            <div class="team-info">
+                <h3>Our Expertise</h3>
+                <p style="color: #6b7280; margin-bottom: 2rem;">
+                    We pride ourselves on staying ahead of design trends and technology. Our expertise spans 
+                    across multiple design disciplines, ensuring we can handle any creative challenge you throw at us.
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-palette" style="color: #6366f1; font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                        <h4>Brand Identity</h4>
+                        <p>Logo design, brand guidelines, visual identity systems</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-print" style="color: #6366f1; font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                        <h4>Print Design</h4>
+                        <p>Posters, brochures, business cards, marketing materials</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-laptop" style="color: #6366f1; font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                        <h4>Digital Design</h4>
+                        <p>Web graphics, social media assets, digital campaigns</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-video" style="color: #6366f1; font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                        <h4>Video Production</h4>
+                        <p>Video editing, motion graphics, promotional videos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: #1f2937;">Why Choose Leo Graphics Media?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="padding: 1.5rem; background: linear-gradient(135deg, #f8fafc, #e2e8f0); border-radius: 15px;">
+                        <i class="fas fa-lightbulb" style="color: #6366f1; font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #1f2937; margin-bottom: 0.5rem;">Creative Excellence</h4>
+                        <p style="color: #6b7280;">Innovative designs that capture attention and communicate your message effectively.</p>
+                    </div>
+                    <div style="padding: 1.5rem; background: linear-gradient(135deg, #f8fafc, #e2e8f0); border-radius: 15px;">
+                        <i class="fas fa-clock" style="color: #6366f1; font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #1f2937; margin-bottom: 0.5rem;">Fast Turnaround</h4>
+                        <p style="color: #6b7280;">Quick delivery without compromising on quality. We respect your deadlines.</p>
+                    </div>
+                    <div style="padding: 1.5rem; background: linear-gradient(135deg, #f8fafc, #e2e8f0); border-radius: 15px;">
+                        <i class="fas fa-dollar-sign" style="color: #6366f1; font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                        <h4 style="color: #1f2937; margin-bottom: 0.5rem;">Affordable Pricing</h4>
+                        <p style="color: #6b7280;">Professional quality designs at competitive prices that fit your budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact-page" class="page">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your next creative project? Let's discuss how we can help you achieve your goals.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>0762983818</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Follow Us</h3>
+                            <p>@leographics_media</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Working Hours</h3>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Service Area</h3>
+                            <p>Tanzania & International<br>Remote design services available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <h3>Ready to Transform Your Brand?</h3>
+                    <p>Let's create something amazing together. Contact us today to discuss your project requirements and get a custom quote tailored to your needs.</p>
+                    <div class="contact-buttons">
+                        <a href="tel:0762983818" class="btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Call Now
+                        </a>
+                        <a href="https://instagram.com/leographics_media" target="_blank" class="btn-secondary">
+                            <i class="fab fa-instagram"></i>
+                            Follow Us
+                        </a>
+                    </div>
+                    
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                    <!-- Quick Quote Form -->
+                    <div class="quote-form">
+                        <h4 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Get a Quick Quote</h4>
+                        <form>
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="Enter your full name" required>
+                            </div>
+                          <form id="quoteForm">
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+  </div>
+
+  <div class="form-group">
+    <label>Service Needed</label>
+    <select id="service" required>
+      <option value="">Select a service</option>
+      <option value="Logo Design">Logo Design</option>
+      <option value="Poster Design">Poster Design</option>
+      <option value="Banner Design">Banner Design</option>
+      <option value="Video Editing">Video Editing</option>
+      <option value="Business Cards">Business Cards</option>
+      <option value="Digital Graphics">Digital Graphics</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Project Details</label>
+    <textarea id="details" rows="4" placeholder="Tell us about your project requirements, timeline, and budget"></textarea>
+  </div>
+
+  <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+    <i class="fas fa-paper-plane"></i> Send Quote Request
+  </button>
+</form>
+
+<script>
+  document.getElementById("quoteForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let phone = document.getElementById("phone").value;
+    let service = document.getElementById("service").value;
+    let details = document.getElementById("details").value;
+
+    // Your WhatsApp number in international format
+    let whatsappNumber = "255762983818";
+
+    let message = `Hello Leo Graphics,%0A%0AI would like to request a quote:%0A📞 Phone: ${phone}%0A🛠 Service: ${service}%0A📝 Details: ${details}`;
+
+    let url = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+    window.open(url, "_blank");
+  });
+</script>
+
+                </div>
+            </div>
+
+            <!-- Additional Contact Information -->
+            <div style="margin-top: 4rem; text-align: center; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 3rem; border-radius: 20px;">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem;">Let's Start Your Project Today</h3>
+                <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Whether you need a complete brand identity, a single poster design, or ongoing design support, 
+                    we're here to help. Our team is ready to turn your creative vision into reality.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <i class="fas fa-comments" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                        <h4>Free Consultation</h4>
+                        <p>Discuss your project ideas with our design experts</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-pencil-ruler" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                        <h4>Custom Solutions</h4>
+                        <p>Tailored designs that match your unique requirements</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-redo" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                        <h4>Unlimited Revisions</h4>
+                        <p>We work until you're completely satisfied</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Page navigation system
+        let currentPage = 'home';
+
+        function showPage(pageName) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageName + '-page').classList.add('active');
+            
+            // Update navigation
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Add active class to current nav item
+            event.target.classList.add('active');
+            
+            // Update current page
+            currentPage = pageName;
+            
+            // Close mobile menu
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Portfolio Filter System
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeInUp 0.6s ease forwards';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your quote request! We will contact you within 24 hours.');
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(0, 0, 0, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+            }
+        });
+
+        // Counter animation for stats (only on about page)
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const text = counter.textContent;
+                let target = parseInt(text);
+                
+                // Handle special cases
+                if (text.includes('24/7')) return;
+                if (text.includes('+')) target = parseInt(text.replace('+', ''));
+                
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = text; // Restore original text
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + (text.includes('+') ? '+' : '');
+                    }
+                }, 16);
+            });
+        }
+
+        // Trigger animations when switching to about page
+        const originalShowPage = showPage;
+        showPage = function(pageName) {
+            originalShowPage.call(this, pageName);
+            
+            if (pageName === 'about') {
+                setTimeout(() => {
+                    animateCounters();
+                }, 500);
+            }
+        };
+
+        // Add loading screen effect
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Add smooth transitions between pages
+        document.querySelectorAll('.page').forEach(page => {
+            page.style.transition = 'opacity 0.3s ease';
+        });
+
+
+          // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(0, 0, 0, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(0, 0, 0, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
